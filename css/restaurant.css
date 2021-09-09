@@ -1,0 +1,207 @@
+body {
+    background-color: rgba(220, 200, 200);
+}
+
+.header-special {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-radius: 20px;
+    width: 100%;
+    box-shadow: 0px 10px 20px lightcoral;
+    margin-bottom: 50px;
+}
+
+.header-decor {
+    background-color: rgb(93, 93, 93);
+    color: white;
+    padding: 20px;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.header-decor-1 {
+    font-size: 2em;
+    font-family: 'Dancing Script';
+}
+
+.header-decor-2 {
+    text-align: right;
+}
+
+.header-decor-2>h2 {
+    color: white;
+    text-align: right;
+    vertical-align: bottom;
+    font-size: 1.2em;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.food-table {
+    box-shadow: 2px 2px 5px lightsalmon;
+}
+.main {
+    margin: auto;
+    width: 90%;
+    box-shadow: 10px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto auto;
+    background-color: rgb(231, 231, 231);
+    box-shadow: 30px 30px 30px lightpink;
+}
+
+.item {
+    border-top: 1px dotted black;
+    border-right: 2px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 1000px;
+    border-radius: 10px;
+}
+
+input {
+    width: 90%;
+    height: 40px;
+    border-radius: 20px;
+    margin: 20px;
+    font-size: 1.2em;
+    padding: 10px;
+    border: 1px dotted black;
+}
+
+.item-left {
+    border-left: 2px solid black;
+}
+
+#bill-printing {
+    justify-content: center;
+    text-align: center;
+    font-size: x-small;
+    border: 1px solid black;
+}
+
+table {
+    margin: auto;
+    border-left: 1px;
+}
+
+table td {
+    padding: 20px;
+}
+
+.close-button {
+    color: lightcoral;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    border: 1px dotted black;
+}
+
+tr,
+td {
+    border-top: 1px dotted teal;
+    border-bottom: 1px dotted teal;
+    /* border-radius: 5px; */
+}
+
+.modal-input {
+    width: 50px;
+    height: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    color: teal;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.close {
+    cursor: pointer;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-content h3 {
+    text-decoration: underline;
+    font-size: 1.4em;
+}
+
+.modal-content p {
+    background-color: cornsilk;
+    border-radius: 20px;
+}
+
+.modal-content {
+    border: 25px ridge black;
+    border-radius: 25px;
+    text-align: center;
+    background-color: #fefefe;
+    line-height: 45px;
+    letter-spacing: 2px;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+.food-item {
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    margin: 20px;
+    padding: 50px;
+    border: 2px dotted grey;
+    justify-content: center;
+    box-shadow: 10px 10px 10px grey;
+}
+
+.food-item>h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+.food-item>h3 {
+    letter-spacing: 3px;
+    color: darkred;
+}
+
+.food-item>p {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 200;
+    /* letter-spacing: 2px; */
+}
+
+.food-table {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 150px;
+    border: 2px ridge grey;
+    margin: 10px;
+}
+
+.billing-button {
+    font-size: 1.1em;
+    align-self: center;
+    border: 1px solid black;
+    border-radius: 0px;
+    width: 120px;
+    height: 40px;
+    margin: 5px;
+}

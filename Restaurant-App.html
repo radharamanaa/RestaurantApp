@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Application</title>
+    <link rel="stylesheet" href="css/restaurant.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,700;1,100;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100;0,300;0,700;1,100;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100;0,300;0,700;1,100;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body onload="renderDishes()">
+    <div class="header-special">
+        <div class="header-decor header-decor-1">
+            <h2>Welcome to the Restaurant!</h2>
+        </div>
+        <div class="header-decor header-decor-2">
+            <h2>What do you wish to have?</h2>
+        </div>
+    </div>
+    <div class="main">
+        <div>
+            <div class="item item-left">
+                <div class="search-input"><input type="text" placeholder="Search a Table" onkeyup="filterTable(this)"></div>
+                <div class="food-table food-table-1" id="table-1" ondrop="onDropp(event)" ondragover="allowDrop(event)">
+                    <h2>Table-1</h2>
+                    <p>A table of four</p>
+                    <div id="T-div-1"></div>
+                    <button onclick="printBill(this.parentNode.id)" class="billing-button">Print Bill</button>
+                    <button onclick='clearTable(this.parentNode.id)' class="billing-button">Clear Table</button>
+                </div>
+                <div class="food-table food-table-2" id="table-2" ondrop="onDropp(event)" ondragover="allowDrop(event)">
+                    <h2>Table-2</h2>
+                    <p>A table of four</p>
+                    <div id="T-div-2"></div>
+                    <button onclick="printBill(this.parentNode.id)" class="billing-button">Print Bill</button>
+                    <button onclick='clearTable(this.parentNode.id)' class="billing-button">Clear Table</button>
+                </div>
+                <div class="food-table food-table-2" id="table-3" ondrop="onDropp(event)" ondragover="allowDrop(event)">
+                    <h2>Table-3</h2>
+                    <p>A table of four</p>
+                    <div id="T-div-3"></div>
+                    <button onclick="printBill(this.parentNode.id)" class="billing-button">Print Bill</button>
+                    <button onclick='clearTable(this.parentNode.id)' class="billing-button">Clear Table</button>
+                </div>
+            </div>
+        </div>
+        <div class="item item-right" id="addFoodItems">
+            <div class="search-input">
+                <input type="text" placeholder="Search for an Item" onkeyup="filterItems()" id="itemSearch">
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id='billPrinting'></div>
+        </div>
+    </div>
+</body>
+<script src="js/InitialData.js"></script>
+<script src="js/Billing.js"></script>
+<script src="js/DragDrops.js"></script>
+
+</html>
